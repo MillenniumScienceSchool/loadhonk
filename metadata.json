@@ -1,0 +1,17 @@
+{
+    "loadhonk": {
+        "version": "1.0.0"
+    },
+    "games": {
+        "hsr": {
+            "global": {
+                "status": "verified",
+                "version": "3.5.0"
+            },
+            "china": {
+                "status": "verified",
+                "version": "3.5.0"
+            }
+        }
+    }
+}
