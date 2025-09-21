@@ -1,0 +1,22 @@
+[package]
+name = "loaderhonk"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+windows = { version = "0.57", features = [
+    "Win32_Foundation",
+    "Win32_Security", 
+    "Win32_System_Diagnostics_Debug",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Memory",
+    "Win32_System_Threading"
+]}
+clap = { version = "4.4", features = ["derive"] }
+
+# Cross-compilation configuration for Windows
+[target.x86_64-pc-windows-gnu]
+linker = "x86_64-w64-mingw32-gcc"
+
+[target.i686-pc-windows-gnu]
+linker = "i686-w64-mingw32-gcc"
